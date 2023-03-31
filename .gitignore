@@ -1,1 +1,3 @@
 public_projects/uber_trips/uber-raw-data-sep14.csv
+public_projects/walmart_sales/archive/*.csv
+public_projects/walmart_sales/clean_data.csv
