@@ -77,6 +77,8 @@ e4 = Element(4)
 
 # Start setting up a LinkedList
 ll = LinkedList(e1)
+print(ll.get_position(1).value)
+print('*' * 60)
 ll.append(e2)
 ll.append(e3)
 
