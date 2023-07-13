@@ -156,3 +156,36 @@ print('*' * 60)
 grades   = [[80, 90, 95], [85, 95, 92], [70, 75, 80], [90, 92, 88]]
 averages = [sum(student_grades) / len(student_grades) for student_grades in grades]
 print("averages", averages)
+
+print('*' * 60)
+#************************************************************************#
+# Finding all pairs of numbers in a list that add up to a given target:
+numbers   = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+target    = 12
+target_2  = 10
+pairs     = [(num1,num2) for num1 in numbers for num2 in numbers if num1+num2 == target]
+pairs_2   = [(num1,num2) for num1 in numbers for num2 in numbers if num1+num2 == target_2]
+print("Pairs Nums", pairs)
+print("Pairs Nums_2", pairs_2)
+
+print('*' * 60)
+#************************************************************************#
+# Converting a list of strings to uppercase, excluding strings starting with a vowel:
+strings   = ["apple", "banana", "Orange", "kiwi", "pear"]
+upper_str = [string.upper() for string in strings if not string.lower().startswith(('a','e','i','o','u'))]
+print("upper", upper_str)
+
+print('*' * 60)
+#************************************************************************#
+# Creating a list of even numbers from a given range:
+start = 1
+end   = 20
+even_numbers = [num for num in range(start, end +1) if num % 2 == 0]
+print("even numbers: ",even_numbers)
+
+print('*' * 60)
+#************************************************************************#
+# Filtering a list of words based on their lengths:
+words = ['apple', 'banana', 'cherry', 'dragonfruit', 'kiwi']
+filtered_words = [word for word in words if len(word) >= 6]
+print("filtered words",filtered_words)
