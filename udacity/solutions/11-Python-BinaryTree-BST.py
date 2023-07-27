@@ -24,9 +24,20 @@ class BST(object):
         return current_node
 
     def search(self, find_val):
-        return self._search_recursive(self.root, find_val)
+        return self._search_recursive(find_val,self.root)
     
-    def _search_recursive(self, current_node, find_val):
+    def _search_recursive(self, find_val,current_node):
+        if current_node:
+            if find_val == current_node.value:
+                return True
+            elif find_val < current_node.value:
+                return self._search_recursive(find_val,current_node.left)
+            else:
+                return self._search_recursive(find_val,current_node.right)
+        else:
+            return False
+        
+        
         
     
 # Set up tree
